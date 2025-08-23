@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Blog!</title>
+    <style>
+        li {
+            display: inline;
+        }
+        #about-section {
+            text-align: center;
+        }
+        #stories-section {
+            text-align: center;
+        }
+
+        .story {
+            display: inline-block;
+            width: 300px;       /* fixed width for each story */
+            height: 400px;      /* fixed height so all boxes match */
+            margin: 10px;
+            text-align: center;
+            border: 3px solid blue;
+            vertical-align: top; /* ensures alignment at the top */
+            box-sizing: border-box; /* keeps padding inside the box */
+        }
+        .profile-picture img {
+            width: 200px;        /* size of the picture */
+            height: 200px;       /* same as width for perfect circle */
+            object-fit: cover;   /* prevents distortion */
+            border-radius: 50%;  /* makes it round */
+        }
+
+        img {
+
+            width: 200px;   /* set a fixed width */
+            height: 200px;  /* set a fixed height */
+            object-fit: cover; /* ensures images don’t look stretched */
+        }
+        .profile-card {
+            display: flex;
+            align-items: center;        /* vertically centers text & image */
+            justify-content: space-between;
+            border: 2px solid #ccc;     /* gives it a card look */
+            padding: 20px;
+            border-radius: 5px;        /* rounded corners */
+            max-width: 700px;           /* keeps it from stretching too wide */
+            margin: auto;               /* centers the card */
+            background: #dbebd1;        /* soft background */
+        }
+
+        .profile-card p {
+            flex: 1;                    /* text takes available space */
+            margin-right: 20px;
+        }
+    </style>
+    
+  </head>
+  <body>
+    <header><h1>Welcome to my Codedex Journey!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#stories-section">Stories</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-section">
+            <hr>
+            <h2>About</h2>
+            <article class="profile-card">
+                <figure class="profile-picture">
+                    <img src="https://i.pinimg.com/1200x/16/0f/01/160f01de6d56c9b016f677b7637fd3f9.jpg" alt="Me" width="200px">
+                </figure>
+                <p>CS Grad from Illinois Tech. 🎓 <br> Secretary of Illinois Tech Esports. 🎮 <br> 3+ years Industry experience as a Technology Analyst. 👩‍💻</p>
+            </article>
+            <br><hr>
+        </section>
+        <section id="stories-section">
+            <h2>Stories</h2>
+            <article class="story"><h3>Story 1</h3>
+                <figure class="story-photo">
+                    <img src="https://i.pinimg.com/1200x/1f/37/39/1f373917adfdf156ad811330355e4456.jpg" alt="Kirby">
+                </figure>
+                <p>
+                    submitted my entry for this month’s challenge. <br> you can find it here : <a href="https://editor.p5js.org/Nupur-Gudigar/full/H2xdC3El0"> p5.js Web Editor</a> 
+                </p>
+            </article>
+            <article class="story"><h3>Story 2</h3>
+                <figure class="story-photo">
+                    <img src="https://i.pinimg.com/1200x/66/71/3a/66713a96b9b21dffd3a85a5d748a3171.jpg" alt="">
+                </figure>
+                <p>
+                    Hosted my Kirby visualizer via GitHub.
+                    <br> <a href="https://nupur-gudigar.github.io/Kirby_Visualizer/"> Link </a> 
+                </p>
+            </article>
+            <article class="story"><h3>Story 3</h3>
+                <figure class="story-photo">
+                    <img src="https://i.pinimg.com/736x/1a/a5/46/1aa546b4eb94694086347c4185a031a4.jpg" alt="" height="300px">
+                </figure>
+                <p>
+                    Doing HTML lessons for fun on codedex.
+                </p>
+            </article>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Made with 💓 by Nupur</li>
+            <li><a href="#legal-section">Legal</a></li>
+            <li><a href="#references-section">References</a></li>
+        </ul>
+    </footer>
+  </body>
+</html>
