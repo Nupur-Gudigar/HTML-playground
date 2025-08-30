@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum Gallery</title>
+  <style>
+        body {
+        margin: 0;
+        font-family: Georgia, serif;
+        background: #f8f5f0; 
+        }
+
+        
+        #gallery-container {
+        text-align: center;
+        background: #e0e0e0;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 3px solid #333;
+        }
+
+        #gallery-header {
+        display: block;  
+        font-size: 2.2em;
+        margin: 0;
+        color: darkred;
+        letter-spacing: 2px;
+        }
+
+        #gallery-container p {
+        display: inline;  
+        font-style: italic;
+        color: #444;
+        }
+
+       
+        .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 25px;
+        padding: 30px;
+        justify-items: center;
+        }
+
+        
+        .gallery-grid img {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+        border: 8px solid goldenrod;        /* gold frame */
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* shadow for depth */
+        border-radius: 6px;
+        background: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+        transform: scale(1.08);
+        box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
+        }
+
+        
+        #item-1 {
+        position: absolute; 
+        top: 180px;
+        left: 20px;
+        border-color: crimson; 
+        }
+
+        
+        #item-2 {
+        position: relative; 
+        top: 15px;
+        left: 10px;
+        border-color: seagreen;
+        }
+
+        
+        #item-3 {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 120px;
+        border-color: gold;
+        z-index: 20;
+        }
+
+  </style>
+</head>
+<body>
+  <div id="gallery-container">
+    <h1 id="gallery-header">Museum Gallery</h1>
+    <p>How Will You Arrange Your Visit?</p>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="https://github.com/codedex-io/css-101/blob/main/4-layout/25-art-gallery/images/avant-garde-painting.png?raw=true" alt="" id="item-1">
+    <img src="https://github.com/codedex-io/css-101/blob/main/4-layout/25-art-gallery/images/ghibli-museum.png?raw=true" alt="" id="item-2">
+    <img src="https://github.com/codedex-io/css-101/blob/main/4-layout/25-art-gallery/images/dippy-the-dinosaur.png?raw=true" alt="" id="item-3">
+    <img src="https://github.com/codedex-io/css-101/blob/main/4-layout/25-art-gallery/images/greek-sculpture.png?raw=true" alt="" id="item-4">
+    <img src="https://github.com/codedex-io/css-101/blob/main/4-layout/25-art-gallery/images/mondrian-composition-with-rby.png?raw=true" alt="" id="item-5">
+    <img src="https://github.com/codedex-io/css-101/blob/main/4-layout/25-art-gallery/images/morning-at-montrose.png?raw=true" alt="" id="item-6">
+    <img src="https://github.com/codedex-io/css-101/blob/main/4-layout/25-art-gallery/images/picture-frame.png?raw=true" alt="" id="item-7">
+    <img src="https://github.com/codedex-io/css-101/blob/main/4-layout/25-art-gallery/images/winged-victory-of-samothrace.png?raw=true" alt="" id="item-8">
+  </div>
+</body>
+</html>
