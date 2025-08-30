@@ -9,7 +9,7 @@
     }
 
     h1 {
-        text-align: left;
+        text-align: center;
     }
 
     img {
@@ -21,7 +21,16 @@
     }
 
     #top-8-wrapper {
-        text-align: center;
+        display: flex;           /* use flexbox */
+        flex-direction: column;  /* stack rows vertically */
+        align-items: center;     /* center horizontally */
+        margin: auto;
+    }
+
+    .top-8-row {
+        display: flex;           /* put cards in a row */
+        justify-content: center; /* center them inside the row */
+        margin: 10px 0;
     }
 
     .friend-card {
